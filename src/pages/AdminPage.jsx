@@ -27,7 +27,7 @@ const AdminPage = () => {
   };
 
   return (
-    <div className="sfondoadmin"> {/* Usa una classe sfondo se necessario */}
+    <div className="sfondoimmaginegialla"> {/* Usa una classe sfondo se necessario */}
       <Container
         maxWidth="sm"
         sx={{
@@ -36,6 +36,7 @@ const AdminPage = () => {
           boxShadow: 3,
           p: 4,
           textAlign: "center",
+          mt: 4
         }}
       >
         {/* Foto del Capo */}
@@ -46,20 +47,11 @@ const AdminPage = () => {
         />
 
         {/* Scritta di benvenuto */}
-        <Typography variant="h4" 
-          sx={{ /* serve per personalizzare */
-            fontFamily: 'Kode Mono, monospace', 
-            fontWeight: 'bold',
-          }}
-        gutterBottom>
-          Bentornato Capo
+        <Typography variant="h4" gutterBottom>
+          Bentornato Capo!
         </Typography>
 
-        <Typography variant="h6" 
-        sx={{ /* serve per personalizzare */
-          fontFamily: 'Kode Mono, monospace', 
-        }}
-        gutterBottom>
+        <Typography variant="h6" gutterBottom>
           Pubblica una nuova sfida
         </Typography>
 
@@ -79,9 +71,7 @@ const AdminPage = () => {
             onChange={handleChange}
             fullWidth
             required
-            InputProps={{
-              style: { fontFamily: 'Kode Mono, monospace' },
-            }}
+            
           />
           <TextField
             label="Descrizione"
@@ -92,9 +82,7 @@ const AdminPage = () => {
             multiline
             rows={4}
             required
-            InputProps={{
-              style: { fontFamily: 'Kode Mono, monospace' },
-            }}
+            
           />
           <TextField
             label="Punteggio"
@@ -104,13 +92,11 @@ const AdminPage = () => {
             onChange={handleChange}
             fullWidth
             required
-            InputProps={{
-              style: { fontFamily: 'Kode Mono, monospace' },
-            }}
+            
           />
           <Button variant="contained" 
             sx={{ /* serve per personalizzare */
-              fontFamily: 'Kode Mono, monospace', 
+               
               fontWeight: 'bold',
             }} 
             

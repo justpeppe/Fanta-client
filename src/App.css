@@ -37,43 +37,115 @@
   }
 }
 
-.sfondologin {
-  background-image: url('./materials/sfondo.jpg');
-  background-size: cover; /* Adatta l'immagine per coprire l'intero contenitore */
-  background-position: center; /* Centra l'immagine */
-  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+.sfondogiallo {
+  background-color: #ffd41f; /* Colore di sfondo giallo eni */
   height: 100vh; /* Imposta l'altezza all'intera finestra */
   width: 100vw; /* Imposta la larghezza all'intera finestra */
   display: flex; /* Per centrare il contenuto */
   justify-content: center; /* Centra orizzontalmente */
-  align-items: center; /* Centra verticalmente */
-}
-
-.sfondocreatorcolor {
-  background-color: #044c93; /* Colore di sfondo blu eni */
-  height: 100vh; /* Imposta l'altezza all'intera finestra */
-  width: 100vw; /* Imposta la larghezza all'intera finestra */
-  display: flex; /* Per centrare il contenuto */
-  justify-content: center; /* Centra orizzontalmente */
-  align-items: center; /* Centra verticalmente */
 
 }
-.sfondocreator {
-  background-image: url('./materials/sfondocreator.jpg');
+
+.sfondoneutro {
+  background-color: #f8f9fa; /* Colore di sfondo bianco neutro */
   height: 100vh; /* Imposta l'altezza all'intera finestra */
   width: 100vw; /* Imposta la larghezza all'intera finestra */
   display: flex; /* Per centrare il contenuto */
   justify-content: center; /* Centra orizzontalmente */
-  align-items: center; /* Centra verticalmente */
+
 }
 
-.sfondoadmin {
-  background-image: url('./materials/sfondoadmin.jpg');
+.sfondoimmaginegialla {
+  background-image: url('./materials/sfondo-login2.jpg'); /* Corretto lo spazio tra url e parentesi */
+  background-size: cover; /* Assicura che l'immagine copra l'intero sfondo */
   height: 100vh; /* Imposta l'altezza all'intera finestra */
   width: 100vw; /* Imposta la larghezza all'intera finestra */
   display: flex; /* Per centrare il contenuto */
+  flex-direction: column; /* Disposizione verticale */
+}
+
+
+.navbar {
+  background-color: #044c93; /* Colore di sfondo della navbar */
+  color: white; /* Colore del testo della navbar */
+  padding: 10px; /* Padding interno della navbar */
+  display: flex; /* Disposizione in orizzontale */
+  align-items: center; /* Allinea verticalmente gli elementi */
+  justify-content: space-between; /* Spaziatura tra gli elementi */
+  width: 100%; /* Larghezza al 100% */
+}
+
+.navbar-left {
+  display: flex; /* Disposizione in orizzontale per gli elementi a sinistra */
+  align-items: center; /* Allinea verticalmente gli elementi */
+}
+
+.navbar-center {
+  display: flex; /* Disposizione in orizzontale per gli elementi a sinistra */
+  align-items: center; /* Allinea verticalmente gli elementi */
   justify-content: center; /* Centra orizzontalmente */
-  align-items: center; /* Centra verticalmente */
   
 }
 
+.navbar-right {
+  display: flex; /* Disposizione in orizzontale per gli elementi a destra */
+  align-items: center; /* Allinea verticalmente gli elementi */
+}
+
+.navbar-links {
+  display: flex; /* Disposizione in orizzontale per i link */
+  list-style: none; /* Rimuove i punti elenco */
+  margin: 0; /* Rimuove il margine */
+  padding: 0; /* Rimuove il padding */
+}
+
+.navbar-links li {
+  margin: 0 15px; /* Spaziatura tra i link */
+}
+
+.navbar-logo {
+  height: 40px; /* Altezza del logo */
+  margin-left: 10px; /* Margine sinistro per distanziare dal bordo */
+  
+}
+
+.login-button {
+  background-color: #ffffff; /* Colore di sfondo del pulsante di login */
+  color: #044c93; /* Colore del testo del pulsante di login */
+  border: none; /* Rimuove il bordo */
+  padding: 10px 20px; /* Padding interno del pulsante */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  border-radius: 5px; /* Angoli arrotondati */
+  font-size: 16px; /* Dimensione del testo */
+  font-weight: bold; /* Grassetto */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  margin-right: 20px; /* Aggiunto margine destro per distanziare dalla fine della navbar */
+}
+
+.registrati-button {
+  background-color: #ffd41f; /* Colore di sfondo del pulsante di login */
+  color: #044c93; /* Colore del testo del pulsante di login */
+  border: none; /* Rimuove il bordo */
+  padding: 10px 20px; /* Padding interno del pulsante */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  border-radius: 5px; /* Angoli arrotondati */
+  font-size: 16px; /* Dimensione del testo */
+  font-weight: bold; /* Grassetto */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  margin-right: 20px; /* Aggiunto margine destro per distanziare dalla fine della navbar */
+}
+
+.navbar-title {
+  font-size: 24px; /* Dimensione del testo */
+  font-weight: bold; /* Grassetto */
+  color: #ffd41f; /* Colore del testo */
+  text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-family: 'Arial', sans-serif; /* Font personalizzato */
+}
+
+.navbar-logos {
+  display: flex; /* Disposizione in orizzontale per i loghi */
+  align-items: center; /* Allinea verticalmente gli elementi */
+  justify-content: center; /* Centra orizzontalmente */
+}

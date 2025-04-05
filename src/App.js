@@ -4,6 +4,8 @@ import './App.css';
 import AdminPage from './pages/AdminPage';
 import CreatorPage from './pages/CreatorPage';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import NavBar from './components/NavBar';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -35,11 +37,13 @@ const HomePage = () => {
 function App() {
   return (
     <Router>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/creator" element={<CreatorPage />} />
+        <Route path="/RegisterPage" element={<RegisterPage />} />
       </Routes>
     </Router>
   );

@@ -9,13 +9,13 @@ import {
   Paper,
 } from "@mui/material";
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <div className="sfondoimmaginegialla" > {/* Usa la classe sfondo */}
       <Container maxWidth="sm">
         <Paper elevation={3} sx={{ p: 4, borderRadius: 3, mt: 4 }}> {/* Aggiunto margin top: 4 per margine superiore */}
-          <Typography className="kode-mono" variant="h4" align="center" gutterBottom>
-            Login
+          <Typography variant="h4" align="center" gutterBottom>
+            Registrati
           </Typography>
           <Box
             component="form"
@@ -25,6 +25,8 @@ const LoginPage = () => {
               gap: 2,
             }}
           >
+            <TextField label="Nome" type="name" fullWidth required />
+            <TextField label="Cognome" type="cognome" fullWidth required />
             <TextField label="Email" type="email" fullWidth required />
             <TextField label="Password" type="password" fullWidth required />
             <Button variant="contained" color="primary" size="large" type="submit">
@@ -37,4 +39,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;

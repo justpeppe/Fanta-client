@@ -20,7 +20,7 @@ const CreatorPage = () => {
   };
 
   return (
-    <div className="sfondocreatorcolor"> {/* Usa la classe sfondocreator */}
+    <div className="sfondoimmaginegialla">
       <Container
         maxWidth="sm"
         sx={{
@@ -29,6 +29,7 @@ const CreatorPage = () => {
           boxShadow: 3,
           p: 4,
           textAlign: "center",
+          mt : 4
         }}
       >
         {/* Foto del Creator */}
@@ -39,12 +40,7 @@ const CreatorPage = () => {
         />
 
         {/* Scritta di benvenuto */}
-        <Typography variant="h4"
-          sx={{ /* serve per personalizzare */
-            
-            fontWeight: 'bold',
-          }} 
-          gutterBottom>
+        <Typography variant="h4" gutterBottom>
             Bentornato Creator
         </Typography>
 
