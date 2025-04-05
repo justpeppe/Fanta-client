@@ -39,9 +39,9 @@ const CreatorPage = () => {
         />
 
         {/* Scritta di benvenuto */}
-        <Typography variant="h6"
+        <Typography variant="h4"
           sx={{ /* serve per personalizzare */
-            fontFamily: 'Kode Mono, monospace', 
+            
             fontWeight: 'bold',
           }} 
           gutterBottom>
