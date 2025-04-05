@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap');
+
+body {
+  font-family: 'Kode Mono', monospace; /* Imposta Kode Mono come font predefinito */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sfondologin {
+  background-image: url('./materials/sfondo.jpg');
+  background-size: cover; /* Adatta l'immagine per coprire l'intero contenitore */
+  background-position: center; /* Centra l'immagine */
+  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+  height: 100vh; /* Imposta l'altezza all'intera finestra */
+  width: 100vw; /* Imposta la larghezza all'intera finestra */
+  display: flex; /* Per centrare il contenuto */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.sfondocreatorcolor {
+  background-color: #044c93 /* Colore di sfondo blu eni */
+
+}
+.sfondocreator {
+  background-image: url('./materials/sfondocreator.jpg');
+  height: 100vh; /* Imposta l'altezza all'intera finestra */
+  width: 100vw; /* Imposta la larghezza all'intera finestra */
+  display: flex; /* Per centrare il contenuto */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.sfondoadmin {
+  background-image: url('./materials/sfondoadmin.jpg');
+  height: 100vh; /* Imposta l'altezza all'intera finestra */
+  width: 100vw; /* Imposta la larghezza all'intera finestra */
+  display: flex; /* Per centrare il contenuto */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  
+}
+
+.kode-mono {
+  font-family: 'Kode Mono', monospace;
+}
